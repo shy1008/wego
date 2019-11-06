@@ -19,15 +19,16 @@
         <header>
             <nav>
                 <ul class="menu_left">
-                    <li style="width:32px; height:32px; background:#ffffff;">logo</li>
+                    <li ><img src="./img/logo.jpg" alt="" style="width:32px; opacity: 1;"></li>
                     <li><img src="./img/icon/32/home.png" alt=""></li>
                     <li><img src="./img/icon/32/compass.png" alt=""></li>
                     <li><img src="./img/icon/32/bag.png" alt=""></li>
                     <li><img src="./img/icon/32/hand.png" alt=""></li>
                 </ul>
                 <ul class="menu_right">
-                    <li><button> 다운로드 </button> </li>
-                    <li><button> 로그인 </button> </li>
+                    <li><img src="./img/login_button.png" alt="" style="height:35px; cursor:pointer; opacity:.8;"> </li>
+                  
+                    <li><img src="./img/down4.png" alt="" style="height:35px; cursor:pointer; opacity:.8;"> </li>
                 </ul>
             </nav>
     <!-- 헤더끝 -->
@@ -36,14 +37,13 @@
         <section class="section1 container">
             <div class='fullscreen-video-wrap'>
                 <video autoplay muted loop id="myVideo" >
-                    <source src="./file/castle.mp4" type="video/mp4">
+                    <source src="./file/play.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="header-overlay"></div>
             <div class='header-content'>
-                  <h2>카드게임</h2>
-                  <button>다운로드 버튼</button>
-                  <p>이미지</p>
+                  <img src="./img/title.png" alt="" style="width:800px; margin:0 auto; ">
+                  <!-- <p>이미지</p> -->
             </div>
         </section>
 <!-- 단락 -->
@@ -89,44 +89,44 @@
         </section>
 <!-- 단락 -->
         <section class="section6">
-          <!-- <div class="right_text_content">
+          <div class="right_text_content" data-aos="zoom-in-left">
             <span style="font-size:35px; font-weight:bold; margin-bottom:50px;">SEAMLESS GAMING.</span>
               <p><br/>Magic: The Gathering created a genre. <br/>
               Hearthstone redefined it in a digital format.<br/>
               We’re taking the best elements from each game and expanding upon <br/>
               them in new ways to create a gameplay experience <br/>
               which feels strangely classic yet refreshing.</p>
-          </div> -->
-          <picture>
-            <source srcset="./img/b1.webp" type="image/webp" style="width:100%;"/> <img src="./img/bg1.jpg" style="width:100%;position:relative;top: -230px; z-index:5;" />
+          </div>
+          <picture class="section_bg">
+            <source srcset="./img/b1.webp" type="image/webp"/> <img src="./img/bg1.jpg" class="img"/>
           </picture>
         </section>
 <!-- 단락 -->
         <section class="section7">
-        <!-- <div class="left_text_content">
-            <span style="font-size:35px; font-weight:bold; margin-bottom:50px;">SEAMLESS GAMING.</span>
-              <p><br/>Magic: The Gathering created a genre. <br/>
-              Hearthstone redefined it in a digital format.<br/>
-              We’re taking the best elements from each game and expanding upon <br/>
-              them in new ways to create a gameplay experience <br/>
-              which feels strangely classic yet refreshing.</p>
-          </div> -->
-          <picture style="width:100%;">
-            <source srcset="./img/b2.webp" type="image/webp" style="width:100%;"/> <img src="./img/bg2.jpg" style="width:100%;position: relative;top:410px; z-index: 6;" />
+          <div class="left_text_content" data-aos="zoom-out-right">
+              <span style="font-size:35px; font-weight:bold; margin-bottom:50px;">SEAMLESS GAMING.</span>
+                <p><br/>Magic: The Gathering created a genre. <br/>
+                Hearthstone redefined it in a digital format.<br/>
+                We’re taking the best elements from each game and expanding upon <br/>
+                them in new ways to create a gameplay experience <br/>
+                which feels strangely classic yet refreshing.</p>
+          </div>
+          <picture class="section_bg">
+            <source srcset="./img/b2.webp" type="image/webp"/> <img src="./img/bg2.jpg" class="img2"/>
           </picture>
         </section>
 <!-- 단락 -->
         <section class="section8">
-        <!-- <div class="right_text_content" style="top: -500px;">
-            <span style="font-size:35px; font-weight:bold; margin-bottom:50px;">SEAMLESS GAMING.</span>
-              <p><br/>Magic: The Gathering created a genre. <br/>
-              Hearthstone redefined it in a digital format.<br/>
-              We’re taking the best elements from each game and expanding upon <br/>
-              them in new ways to create a gameplay experience <br/>
-              which feels strangely classic yet refreshing.</p>
-          </div> -->
-          <picture style="width:100%;">
-            <source srcset="./img/b3.webp" type="image/webp" style="width:100%;"/> <img src="./img/bg3.jpg" style="width:100%;position: relative; top:280px; z-index: 7;" />
+          <div class="right_text_content2" data-aos="zoom-out-left">
+              <span style="font-size:35px; font-weight:bold; margin-bottom:50px;">SEAMLESS GAMING.</span>
+                <p><br/>Magic: The Gathering created a genre. <br/>
+                Hearthstone redefined it in a digital format.<br/>
+                We’re taking the best elements from each game and expanding upon <br/>
+                them in new ways to create a gameplay experience <br/>
+                which feels strangely classic yet refreshing.</p>
+          </div>
+          <picture class="section_bg">
+            <source srcset="./img/b3.webp" type="image/webp"/> <img src="./img/bg3.jpg"  class="img3"/>asddddd
           </picture>
         </section>
     <!-- 푸터시작 -->

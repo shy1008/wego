@@ -71,6 +71,9 @@ header{
     opacity: .5;
     cursor: pointer;
 }
+.menu_left li:first-child{
+    opacity: 1;
+}
 .menu_left li:hover{
     opacity: 1;
     font-weight: bold;
@@ -123,9 +126,11 @@ header{
     top: 0;
     left: 0;
     width: 100vw;
+    background: #5756566c;
 }
 .header-content{
     z-index: 3;
+    display: grid;
 }
 #myVideo {
     min-width: 100%;
@@ -221,40 +226,78 @@ figure{
     height: 700px;
 }
 .section6{
-    position: absolute;
+    position: relative;
+    width: 100%;
+    height: 1029px;
+    top: -52px;
+    margin-top: -163px;
+    margin-bottom: -345px;
+}
+.section7{
     width: 100%;
     height: 100%;
 }
-.right_text_content{
-    position: absolute; 
-    float:right; 
-    z-index:4; 
-    top:300px;
-    right:250px;
+.section8{
+    width: 100%;
+    height: 100%;
+    margin-bottom: -140px;
+}
+.img{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 4;
+}
+.img2{
+    z-index:5;
+    width: 100%;
+    position: relative;
+    margin-top: -90px;
+}
+.img3{
+    z-index: 6;
+    width: 100%;
+    position: relative;
+    top: -130px;
+    margin-bottom: -20px;
+    margin-top: -230px;
+}
+.right_text_content {
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    z-index:7; 
+    color: white;
+    line-height: 2rem;
+    
+}
+.right_text_content2 {
+    position: relative;
+    float: right;
+    top: 200px;
+    right: 50px;
+    z-index:7; 
     color: white;
     line-height: 2rem;
     
 }
 .left_text_content{
-    position: relative; 
-    float: left; 
-    z-index:4; 
-    top:-100px;
-    left:250px;
+    position: relative;
+    top: 350px;
+    left: 50px;
+    z-index:7; 
     color: white;
     line-height: 2rem;
 }
-.section7{
-    width: 100%;
-}
+
 footer{
     width: 100%;
-    height: 400px;
+    height: 403px;
     background: black;
     position: relative;
     color: white;
     text-align: center;
-    top: 278px;
 }
 .footer_icon{
     padding: 40px 0px;
