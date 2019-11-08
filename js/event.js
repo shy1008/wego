@@ -10,12 +10,19 @@ $(document).ready(function(){
             }
         }); 
     });
-    $('.test').slick({
+    $('.slide').slick({
           slidesToShow: 5,
           slidesToScroll: 1,
           autoplay: true,
+          draggable: false,
+          touchMove: false,
+          accessibility: false,
+          swipeToSlide: false,
           arrows:false,
-          autoplaySpeed: 2000,
+          pauseOnHover: false,
+          pauseOnFocus: false,
+          focusOnSelect: false,
+          autoplaySpeed: 1000,
           responsive: [
       {
         breakpoint: 1024,

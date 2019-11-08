@@ -31,7 +31,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+html,body {
+    min-width: 1635px;
     line-height: 1;
     overflow-x: hidden;
     font-family: 'Noto Sans', sans-serif;
@@ -59,6 +60,7 @@ header{
     position: fixed;
     width: 100%;
     z-index: 999;
+    min-width: 800px;
 }
 .menu_left{
     display: inline-flex;
@@ -138,6 +140,7 @@ header{
 }
 .section2{
     background: darkgrey;
+    height: 400px;
     background-image: url(../img/bg3.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -147,7 +150,7 @@ header{
     background: #030406;
 }
 .overlay{
-    width: 100vw;
+    /* width: 100vw; */
     height: 100%;
     background: rgba(32, 34, 36, 0.514);
     

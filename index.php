@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
     <title>Home</title>
+    <script>
+    var uAgent = navigator.userAgent.toLowerCase();
+    var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce', 'nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
+    for (var i = 0; i < mobilePhones.length; i++) {
+        if (uAgent.indexOf(mobilePhones[i]) != -1) {
+            document.location = "모바일 페이지 주소"
+        }
+    }
+    </script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 </head>
 <!-- 바디시작 -->
 <body>
@@ -19,16 +28,15 @@
         <header>
             <nav>
                 <ul class="menu_left">
-                    <li ><img src="./img/logo.jpg" alt="" style="width:32px; opacity: 1;"></li>
-                    <li><img src="./img/icon/32/home.png" alt=""></li>
-                    <li><img src="./img/icon/32/compass.png" alt=""></li>
-                    <li><img src="./img/icon/32/bag.png" alt=""></li>
-                    <li><img src="./img/icon/32/hand.png" alt=""></li>
+                    <li ><img src="./img/logo.jpg" alt="logo" style="width:32px; opacity: 1;"></li>
+                    <li><img src="./img/icon/32/home.png" alt="sub_menu1"></li>
+                    <li><img src="./img/icon/32/compass.png" alt="sub_menu2"></li>
+                    <li><img src="./img/icon/32/bag.png" alt="sub_menu3"></li>
+                    <li><img src="./img/icon/32/hand.png" alt="sub_menu4"></li>
                 </ul>
                 <ul class="menu_right">
-                    <li><img src="./img/login_button.png" alt="" style="height:35px; cursor:pointer; opacity:.8;"> </li>
-                  
-                    <li><img src="./img/down4.png" alt="" style="height:35px; cursor:pointer; opacity:.8;"> </li>
+                    <li><img src="./img/login_button.png" alt="login" style="height:35px; cursor:pointer; opacity:.8;"> </li>
+                    <li><img src="./img/down4.png" alt="download" style="height:35px; cursor:pointer; opacity:.8;"> </li>
                 </ul>
             </nav>
     <!-- 헤더끝 -->
@@ -42,20 +50,20 @@
             </div>
             <div class="header-overlay"></div>
             <div class='header-content'>
-                  <img src="./img/title.png" alt="" style="width:800px; margin:0 auto; ">
+                  <img src="./img/title.png" alt="main_title" style="width:800px; margin:0 auto; ">
                   <!-- <p>이미지</p> -->
             </div>
         </section>
 <!-- 단락 -->
         <section class="section2">
-            <div class="test" >
-                <div><img src="./img/item/item.png" alt="" ></div>
-                <div><img src="./img/item/item3.png" alt="" style="height:320px;"></div>
-                <div><img src="./img/item/item5.png" alt="" style="height:320px;"></div>
-                <div><img src="./img/item/item4.png" alt="" style="height:320px;"></div>
-                <div><img src="./img/item/item2.png" alt="" style="height:320px;"></div>
-                <div><img src="./img/item/item7.png" alt="" style="height:320px;"></div>
-                <div><img src="./img/item/item6.png" alt="" style="height:320px;"></div>
+            <div class="slide" >
+                <div><img src="./img/item/item.png" alt="item1" ></div>
+                <div><img src="./img/item/item3.png" alt="item2" style="height:320px;"></div>
+                <div><img src="./img/item/item5.png" alt="item3" style="height:320px;"></div>
+                <div><img src="./img/item/item4.png" alt="item4" style="height:320px;"></div>
+                <div><img src="./img/item/item2.png" alt="item5" style="height:320px;"></div>
+                <div><img src="./img/item/item7.png" alt="item6" style="height:320px;"></div>
+                <div><img src="./img/item/item6.png" alt="item7" style="height:320px;"></div>
             </div>
         </section>
 <!-- 단락 -->
@@ -133,9 +141,9 @@
         <footer>
           <span style="padding:30px 0px; line-height: 80px; font-size:24px;">STAY UP TO DATE ON GODS UNCHAINED<span><br/>
           <ul class="footer_icon">
-            <li><img src="./img/item/icon1.png" alt="" style="width:50px;"></li>
-            <li><img src="./img/item/icon2_1.png" alt="" style="width:50px;"></li>
-            <li><img src="./img/item/icon3_1.png" alt="" style="width:50px;"></li>
+            <li><img src="./img/item/icon1.png" alt="twitter" style="width:50px;"></li>
+            <li><img src="./img/item/icon2_1.png" alt="discord" style="width:50px;"></li>
+            <li><img src="./img/item/icon3_1.png" alt="reddit" style="width:50px;"></li>
           </ul>
           <ul class="footer_menu">
             <li>Blog</li>
