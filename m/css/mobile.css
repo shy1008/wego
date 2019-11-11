@@ -103,32 +103,41 @@ header{
     background-size: cover;
     object-fit: cover;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .overlay{
     width: 100%;
     height: 100%;
+    padding-bottom: 30%;
     background: rgba(32, 34, 36, 0.514);;
 }
 .section_text{
     text-align: center;
     color: #ffffff;
     line-height: 2rem;
-    padding-top: 10%;
+    padding: 10% 15px 0;
 }
-.section_text span{
+.section_text span,.section_text2 span{
     font-size: 1.5rem;
 }
-.section_text p{
+.section_text p,.section_text2 p{
     font-size: 1rem;
+}
+.section_text2{
+    padding: 0 15px 10%;
+    text-align: center;
+    color: #ffffff;
+    line-height: 2rem;
 }
 .left_box{
     width: 100%;
-    margin: 100px 0px;
+    margin: 20% 0px;
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1s infinite  alternate;
     max-width:100%;
-
+}
+.left_box img{
+    width: 100%;
 }
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
@@ -137,4 +146,90 @@ header{
 @keyframes mover{
     0% { transform: translateY(0); }
     100% { transform: translateY(-20px); }
+    
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 10%;
+    padding: 30px;
+}
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 비율인 경우 */
+    /* padding-bottom값은 4:3 비율인 경우 75%로 설정합니다 */
+    padding-top: 25px;
+    height: 0;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.section4{
+    background-image: url("../../img/b1.png");
+    background-position: left;
+    /* background-size: cover; */
+    object-fit: cover;
+    height: 800px;
+    position: relative;
+    top: -150px;
+    margin-bottom: -100px;
+}
+.right_text_content {
+    z-index:3; 
+    color: white;
+    line-height: 2rem;
+    text-align: center;
+    padding: 300px 15px 0;
+}
+.section5{
+    background-image: url("../../img/b2.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    object-fit: cover;
+    height: 800px;
+    position: relative;
+    top: -150px;
+    margin-bottom: -210px;
+}
+.section6{
+    background-image: url("../../img/b3.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    object-fit: cover;
+    height: 800px;
+    position: relative;
+    top: -150px;
+    margin-bottom: -220px;
+}
+footer{
+    width: 100%;
+    height: 500px;
+    background: black;
+    position: relative;
+    color: white;
+    text-align: center;
+   
+}
+.footer_icon{
+    padding: 40px 0px;
+}
+.footer_icon li{
+    margin: auto 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+.footer_menu{
+    text-align: left;
+    margin-left: 15px;
 }
