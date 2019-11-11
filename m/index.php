@@ -15,7 +15,7 @@
     var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce', 'nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
     for (var i = 0; i < mobilePhones.length; i++) {
         if (uAgent.indexOf(mobilePhones[i]) != -1) {
-            document.location = url("../wego2/m/index.php");
+            document.location = url("../wego/m/index.php");
         }
     }
     </script> 

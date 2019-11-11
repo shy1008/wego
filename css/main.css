@@ -128,7 +128,7 @@ header{
     top: 0;
     left: 0;
     width: 100vw;
-    background: #5756566c;
+    background: rgba(32, 34, 36, 0.514);
 }
 .header-content{
     z-index: 3;
