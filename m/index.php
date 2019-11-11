@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
     <title>Home</title>
+    <script>
+    var uAgent = navigator.userAgent.toLowerCase();
+    var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce', 'nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
+    for (var i = 0; i < mobilePhones.length; i++) {
+        if (uAgent.indexOf(mobilePhones[i]) != -1) {
+            document.location = url("../wego2/m/index.php");
+        }
+    }
+    </script> 
 </head>
 <!-- 바디시작 -->
 <body>
@@ -18,11 +27,11 @@
   <!-- 헤더시작 --> 
     <header>
       <ul class="nav">
-        <li class="menu_left"><a href="#"><img src="../img/icon/32/home.png" alt=""></a></li>
-        <li class="menu_left"><a href="#"><img src="../img/icon/32/compass.png" alt=""></a></li>
-        <li class="menu_left"><a href="#"><img src="../img/icon/32/bag.png" alt=""></a></li>
-        <li class="menu_left"><a href="#"><img src="../img/icon/32/hand.png" alt=""></a></li>
-        <li class="menu_right"><a href="#"><img src="../img/icon/32/user.png" alt=""></a></li>
+        <li class="menu_left"><a href="#"><img src="../img/icon/32/home.png" alt="sub_menu1"></a></li>
+        <li class="menu_left"><a href="#"><img src="../img/icon/32/compass.png" alt="sub_menu2"></a></li>
+        <li class="menu_left"><a href="#"><img src="../img/icon/32/bag.png" alt="sub_menu3"></a></li>
+        <li class="menu_left"><a href="#"><img src="../img/icon/32/hand.png" alt="sub_menu4"></a></li>
+        <li class="menu_right"><a href="#"><img src="../img/icon/32/user.png" alt="login"></a></li>
       </ul>
   <!-- 헤더끝 --> 
     </header>
@@ -54,7 +63,7 @@
           <span>TOURNAMENT PRIZEPOOL</span><br/>10% of pack sales go directly to the first Gods Unchained World Championship, with a $1.6M goal.
         </div>
         <div class="left_box" data-aos="fade-up" >
-           <img src="../img/card.png" alt="">
+           <img src="../img/card.png" alt="carditem">
         </div>
         <div class="section_text2" data-aos="fade-up">
           <span>Exclusive Presale Packs</span><br/>A completely limited edition Genesis Season of 380 unique cards. Only available before game launch, and hard-capped at $15M. Don’t miss out.

@@ -15,7 +15,7 @@
     var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce', 'nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
     for (var i = 0; i < mobilePhones.length; i++) {
         if (uAgent.indexOf(mobilePhones[i]) != -1) {
-            document.location = "url(../../m/index.php)"
+            document.location = "../wego2/m/index.php"
         }
     }
     </script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
@@ -28,7 +28,7 @@
         <header>
             <nav>
                 <ul class="menu_left">
-                    <li ><img src="./img/logo.jpg" alt="logo" style="width:32px; opacity: 1;"></li>
+                    <li><img src="./img/logo.jpg" alt="logo" style="width:32px; opacity: 1;"></li>
                     <li><img src="./img/icon/32/home.png" alt="sub_menu1"></li>
                     <li><img src="./img/icon/32/compass.png" alt="sub_menu2"></li>
                     <li><img src="./img/icon/32/bag.png" alt="sub_menu3"></li>
