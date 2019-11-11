@@ -10,15 +10,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
     <title>Home</title>
-    <script>
-    // var uAgent = navigator.userAgent.toLowerCase();
-    // var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce', 'nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
-    // for (var i = 0; i < mobilePhones.length; i++) {
-    //     if (uAgent.indexOf(mobilePhones[i]) != -1) {
-    //         document.location = "모바일 페이지 주소"
-    //     }
-    // }
-    </script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 </head>
 <!-- 바디시작 -->
 <body>
