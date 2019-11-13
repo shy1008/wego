@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <title>Wego</title>
     <script>
     var uAgent = navigator.userAgent.toLowerCase();
     var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce', 'nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
@@ -24,22 +24,8 @@
 <body>
   <!-- wrap시작 -->
     <div id="wrap">
-      <!-- 헤더시작 -->
         <header>
-            <nav>
-                <ul class="menu_left">
-                    <li><img src="./img/logo.jpg" alt="logo" style="width:32px; opacity: 1;"></li>
-                    <li><img src="./img/icon/32/home.png" alt="sub_menu1"></li>
-                    <li><img src="./img/icon/32/compass.png" alt="sub_menu2"></li>
-                    <li><img src="./img/icon/32/bag.png" alt="sub_menu3"></li>
-                    <li><img src="./img/icon/32/hand.png" alt="sub_menu4"></li>
-                </ul>
-                <ul class="menu_right">
-                    <li><img src="./img/login_button.png" alt="login" style="height:35px; cursor:pointer; opacity:.8;"> </li>
-                    <li><img src="./img/down4.png" alt="download" style="height:35px; cursor:pointer; opacity:.8;"> </li>
-                </ul>
-            </nav>
-    <!-- 헤더끝 -->
+          <?php include "./lib/header.php"; ?>
         </header>
 <!-- 단락 -->
         <section class="section1 container">
@@ -139,21 +125,7 @@
         </section>
     <!-- 푸터시작 -->
         <footer>
-          <span style="padding:30px 0px; line-height: 80px; font-size:24px;">STAY UP TO DATE ON GODS UNCHAINED<span><br/>
-          <ul class="footer_icon">
-            <li><img src="./img/icon/icon1.png" alt="twitter" style="width:50px;"></li>
-            <li><img src="./img/icon/icon2_1.png" alt="discord" style="width:50px;"></li>
-            <li><img src="./img/icon/icon3_1.png" alt="reddit" style="width:50px;"></li>
-          </ul>
-          <ul class="footer_menu">
-            <li>Blog</li>
-            <li>Referrals</li>
-            <li>FAQ</li>
-            <li>Terms</li>
-            <li>Activate</li>
-            <li>Jobs</li>
-          </ul>
-          <p style="font-size:15px;">Copyright © 2019 Immutable. All rights reserved.</p>
+          <?php include "./lib/footer.php"; ?>
     <!-- 푸터끝 --> 
         </footer>
   <!-- wrap끝 -->

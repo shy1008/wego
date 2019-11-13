@@ -53,7 +53,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 header{
     background-color: rgba(15,27,39,1);
     height: 63px;
@@ -164,7 +163,7 @@ header{
    
 }
 .section_text{
-    padding: 30px 0px 40px;
+    padding: 60px 0px 40px;
     font-size: 24px;
     line-height: 3rem;
     opacity:0;
@@ -309,9 +308,6 @@ footer{
 }
 .footer_icon li:hover{
     scale: .5;
-}
-.footer_menu{
-
 }
 .footer_menu li{
     margin: auto 10px;

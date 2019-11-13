@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <title>Wego</title>
     <script>
     var uAgent = navigator.userAgent.toLowerCase();
     var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce', 'nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
@@ -27,7 +27,7 @@
   <!-- 헤더시작 --> 
     <header>
       <ul class="nav">
-        <li class="menu_left"><a href="#"><img src="../img/icon/32/home.png" alt="sub_menu1"></a></li>
+        <li class="menu_left"><a href=""><img src="../img/icon/32/home.png" alt="sub_menu1"></a></li>
         <li class="menu_left"><a href="#"><img src="../img/icon/32/compass.png" alt="sub_menu2"></a></li>
         <li class="menu_left"><a href="#"><img src="../img/icon/32/bag.png" alt="sub_menu3"></a></li>
         <li class="menu_left"><a href="#"><img src="../img/icon/32/hand.png" alt="sub_menu4"></a></li>
@@ -76,7 +76,7 @@
     </section>
 <!-- 단락 -->
     <section class="section4"> 
-      <div class="right_text_content" data-aos="fade-up">
+      <div class="right_text_content" data-aos="fade-up"data-aos-duration="3000">
         <span style="font-size:35px; font-weight:bold; margin-bottom:50px;">SEAMLESS GAMING.</span>
           <p><br/>Magic: The Gathering created a genre. <br/>
           Hearthstone redefined it in a digital format.<br/>
@@ -87,7 +87,7 @@
     </section>
 <!-- 단락 -->
     <section class="section5"> 
-      <div class="right_text_content" data-aos="fade-up">
+      <div class="right_text_content" data-aos="fade-up"data-aos-duration="3000">
         <span style="font-size:35px; font-weight:bold; margin-bottom:50px;">SEAMLESS GAMING.</span>
           <p><br/>Magic: The Gathering created a genre. <br/>
           Hearthstone redefined it in a digital format.<br/>
@@ -98,7 +98,7 @@
     </section>
 <!-- 단락 -->
     <section class="section6"> 
-      <div class="right_text_content" data-aos="fade-up">
+      <div class="right_text_content" data-aos="fade-up"data-aos-duration="3000">
         <span style="font-size:35px; font-weight:bold; margin-bottom:50px;">SEAMLESS GAMING.</span>
           <p><br/>Magic: The Gathering created a genre. <br/>
           Hearthstone redefined it in a digital format.<br/>
