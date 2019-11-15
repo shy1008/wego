@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="stylesheet" type="text/css" href="./css/main.css"> -->
-    <link rel="stylesheet" type="text/css" href="./css/gallery.css">
-    <link rel="stylesheet" type="text/css" href="./css/gamma_style.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="../css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="../css/gamma_style.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
     <title>gallery</title>
@@ -21,14 +22,20 @@
         }
     }
     </script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           -->
-    <script src="./js/modernizr.custom.70736.js"></script>
+    <script src="../js/modernizr.custom.70736.js"></script>
 </head>
 <!-- 바디시작 -->
 <body>
   <!-- wrap시작 -->
     <div id="wrap">
         <header>
-          <?php include "./lib/header.php"; ?>
+            <ul class="nav">
+                <li class="menu_left"><a href="./index.php"><img src="../img/icon/32/home.png" alt="sub_menu1"></a></li>
+                <li class="menu_left"><a href="./gallery.php"><img src="../img/icon/32/compass.png" alt="sub_menu2"></a></li>
+                <li class="menu_left"><a href="#"><img src="../img/icon/32/bag.png" alt="sub_menu3"></a></li>
+                <li class="menu_left"><a href="#"><img src="../img/icon/32/hand.png" alt="sub_menu4"></a></li>
+                <li class="menu_right"><a href="#"><img src="../img/icon/32/user.png" alt="login"></a></li>
+            </ul>
         </header>
     <!-- 단락시작 -->
     <section class="gallery">
@@ -46,30 +53,30 @@
             <ul class="gamma-gallery">
                 <li>
                     <div data-alt="img" data-description="<h3><p style='color:#90dce4;'>one block game</p></br>Game name</h3>" data-max-width="1800" data-max-height="1350">
-                        <div data-src="./img/gallery/grid/grid1.jpg"></div>
+                        <div data-src="../img/gallery/grid/grid1.jpg"></div>
                         <div style="float:left;">asdasdasdasd</div>
                     </div>
                 </li>
                 <li>
                     <div data-alt="img" data-description="<h3>Game name</h3>" data-max-width="1800" data-max-height="1350">
-                        <div data-src="./img/gallery/grid/grid2.jpg"></div>
+                        <div data-src="../img/gallery/grid/grid2.jpg"></div>
                         
                     </div>
                 </li>
                 <li>
                     <div data-alt="img" data-description="<h3>Game name</h3>" data-max-width="1800" data-max-height="1550">
-                        <div data-src="./img/gallery/grid/grid3.jpg" data-min-width="150"></div>
+                        <div data-src="../img/gallery/grid/grid3.jpg" data-min-width="150"></div>
                         
                     </div>
                 </li>
                 <li>
                     <div data-alt="img" data-description="<h3>Game name</h3>" data-max-width="1800" data-max-height="1350">
-                        <div data-src="./img/gallery/grid/grid4.jpg" data-min-width="150"></div>
+                        <div data-src="../img/gallery/grid/grid4.jpg" data-min-width="150"></div>
                     </div>
                 </li>
                 <li>
                     <div data-alt="img" data-description="<h3>Game name</h3>" data-max-width="1800" data-max-height="1350">
-                        <div data-src="./img/gallery/grid/grid5.png" data-min-width="150"></div>
+                        <div data-src="../img/gallery/grid/grid5.png" data-min-width="150"></div>
                     </div>
                 </li>
                 <li>
@@ -84,37 +91,37 @@
                         <noscript>
                             <img src="./img/gallery/xsmall/3.jpg" alt="img"/>
                         </noscript> -->
-                        <div data-src="./img/gallery/grid/grid6.jpg" data-min-width="150"></div>
+                        <div data-src="../img/gallery/grid/grid6.jpg" data-min-width="150"></div>
                     </div>
                 </li>
                 <li>
                     <div data-alt="img" data-description="<h3>Game name</h3>" data-max-width="1800" data-max-height="1350">
-                        <div data-src="./img/gallery/grid/grid8.jpg" data-min-width="150"></div>
+                        <div data-src="../img/gallery/grid/grid8.jpg" data-min-width="150"></div>
                     </div>
                 </li>
                 <li>
                     <div data-alt="img" data-description="<h3>Game name</h3>" data-max-width="1800" data-max-height="1350">
-                        <div data-src="./img/gallery/grid/grid8.jpg" data-min-width="150"></div>
+                        <div data-src="../img/gallery/grid/grid8.jpg" data-min-width="150"></div>
                     </div>
                 </li>
                 <li>
                     <div data-alt="img" data-description="<h3>Game name</h3>" data-max-width="1800" data-max-height="1350">
-                        <div data-src="./img/gallery/grid/grid9.jpg" data-min-width="150"></div>
+                        <div data-src="../img/gallery/grid/grid9.jpg" data-min-width="150"></div>
                     </div>
                 </li>
                 <li>
                     <div data-alt="img" data-description="<h3>Game name</h3>" data-max-width="1800" data-max-height="1350">
-                        <div data-src="./img/gallery/grid/grid10.png" data-min-width="150"></div>
+                        <div data-src="../img/gallery/grid/grid10.png" data-min-width="150"></div>
                     </div>
                 </li>
                 <li>
                     <div data-alt="img" data-description="<h3>Game name</h3>" data-max-width="1800" data-max-height="1350">
-                        <div data-src="./img/gallery/grid/grid11.jpg" data-min-width="150"></div>
+                        <div data-src="../img/gallery/grid/grid11.jpg" data-min-width="150"></div>
                     </div>
                 </li>
                 <li>
                     <div data-alt="img" data-description="<h3>Game name</h3>" data-max-width="1800" data-max-height="1350">
-                        <div data-src="./img/gallery/grid/grid11.jpg" data-min-width="150"></div>
+                        <div data-src="../img/gallery/grid/grid11.jpg" data-min-width="150"></div>
                     </div>
                 </li>
                 
@@ -132,7 +139,7 @@
     <!-- 단락끝 -->
     </section>
     <footer>
-          <?php include "./lib/footer.php"; ?>
+          <?php include "../lib/footer.php"; ?>
     <!-- 푸터끝 --> 
     </footer>
   <!-- wrap끝 -->
@@ -140,14 +147,14 @@
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="./slick/slick.min.js"></script>
-<script src="./js/event.js"></script>
-<script src="./js/blur.js"></script>
+<script type="text/javascript" src="../slick/slick.min.js"></script>
+<script src="../js/event.js"></script>
+<script src="../js/blur.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="./js/aos.js"></script>
+<script src="../js/aos.js"></script>
 
-<script src="./js/jquery.masonry.min.js"></script>
-<script src="js/gamma.js"></script>
+<script src="../js/jquery.masonry.min.js"></script>
+<script src="../js/gamma.js"></script>
 <script type="text/javascript">
 			
 			$(function() {

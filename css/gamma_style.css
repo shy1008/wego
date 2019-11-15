@@ -64,12 +64,14 @@
 
 .gamma-description {
 	background: #fff;
-	background: rgba(255, 255, 255, 0.6);
+	background: rgba(0, 0, 0, 0.5);
 	position: absolute;
-	top: 20px;
-	left: 20px;
-	bottom: 20px;
-	right: 20px;
+	color: #fcb000;
+	margin: 4px;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
 	text-align: center;
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
@@ -248,11 +250,11 @@ button.gamma-btn-sspause:before {
 }
 
 .gamma-nav span.gamma-prev:before {
-	content: '\e75d';
+	content: url("../img/icon/left_arrow.png");
 }
 
 .gamma-nav span.gamma-next:before {
-	content: '\e75e';
+	content: url("../img/icon/right_arrow.png");
 }
 
 .gamma-img-fly {
@@ -265,11 +267,11 @@ button.gamma-btn-sspause:before {
 /* Loaders */
 
 .gamma-loading {
-	background: transparent url(../images/loader_light.gif) no-repeat center center;
+	background: transparent url(../img/gallery/loader_light.gif) no-repeat center center;
 }
 
 .gamma-single-view.gamma-loading {
-	background: transparent url(../images/loader_dark.gif) no-repeat center center;
+	background: transparent url(../img/gallery/loader_dark.gif) no-repeat center center;
 }
 
 

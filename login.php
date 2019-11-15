@@ -18,10 +18,11 @@
             document.location = "../wego/m/index.php"
         }
     }
-    </script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    </script> 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 </head>
 <!-- 바디시작 -->
-<body>
+<body >
   <!-- wrap시작 -->
     <div id="wrap">
         <header>
@@ -130,14 +131,14 @@
         </footer>
   <!-- wrap끝 -->
     </div>
-
+    
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="./slick/slick.min.js"></script>
 <script src="./js/event.js"></script>
-<script src="./js/blur.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./js/aos.js"></script>
+<script src="./js/blur.js"></script>
 <!-- 바디 끝 -->
 </body>
 </html>
