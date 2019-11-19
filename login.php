@@ -19,15 +19,35 @@
         }
     }
     </script> 
+    <style>
+    body{
+      background:black;
+    }
+    </style>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 </head>
 <!-- 바디시작 -->
 <body >
+<a href="#page-top" class="floating-btn scrollup">
+  <img src="./img/icon/up64.png" alt="floating-btn" >	
+</a>
+<button class="but"><img src="./img/icon/x64.png" alt="close"></button>
+<div class="bg-text">
+  <h1 class="login_head">SIGN IN TO GODS UNCHAINED</h1>
+    <form action="" method="post" id="login">
+      <input type="email" name="email" value="Email Address" placeholder="Email Address" id="email">
+      <input type="password" name="email" value="Password" placeholder ="Password" id="password">
+      <p>Forgot password?</p>
+      <input type="submit" value="LOGIN" id="submit">
+    </form>
+  <p>No account? <span class="pass_find">Register</span> to claim your free core pack!</p>
+</div>
   <!-- wrap시작 -->
-    <div id="wrap">
+    <div id="wrap"  class="blur">
         <header>
-          <?php include "./lib/header.php"; ?>
+            <?php include "./lib/header.php"; ?>
         </header>
+       
 <!-- 단락 -->
         <section class="section1 container">
             <div class='fullscreen-video-wrap'>
@@ -139,6 +159,32 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./js/aos.js"></script>
 <script src="./js/blur.js"></script>
+<script>
+    $(".but").click(function(){
+        $(".but").css('display','none');
+        $(".bg-text").css('display','none');
+        $(".blur").removeClass();
+    });
+
+    $(".scrollup").hide(); // 탑 버튼 숨김
+    $(function () {
+                 
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 900 ) { // 스크롤 내릴 표시
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+                
+        $('.scrollup').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 600);  // 탑 이동 스크롤 속도
+            return false;
+        });
+    });
+    </script>
 <!-- 바디 끝 -->
 </body>
 </html>

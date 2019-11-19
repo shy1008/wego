@@ -19,14 +19,30 @@
         }
     }
     </script> 
+    <style>
+    body{
+      background:black;
+    }
+    </style>
 </head>
 <!-- 바디시작 -->
 <body>
 <a href="#page-top" class="floating-btn scrollup">
   <img src="../img/icon/up32.png" alt="floating-btn" >	
 </a>
+<button class="but"><img src="../img/icon/x32.png" alt="close"></button>
+<div class="bg-text">
+  <h1 class="login_head">SIGN IN TO GODS UNCHAINED</h1>
+    <form action="" method="post" id="login">
+      <input type="email" name="email" value="Email Address" placeholder="Email Address" id="email">
+      <input type="password" name="email" value="Password" placeholder ="Password" id="password">
+      <p>Forgot password?</p>
+      <input type="submit" value="LOGIN" id="submit">
+    </form>
+  <p>No account? <span class="pass_find">Register</span> to claim your free core pack!</p>
+</div>
 <!-- wrap시작 -->
-  <div id="wrap">
+  <div id="wrap" class="blur">
   <!-- 헤더시작 --> 
     <header>
       <?php include "./lib/header.php"; ?>
@@ -136,9 +152,15 @@
 <script src="../js/event.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="../js/aos.js"></script>
-
+<script src="../js/blur.js"></script>
 <script>
-$(".scrollup").hide(); // 탑 버튼 숨김
+    $(".but").click(function(){
+        $(".but").css('display','none');
+        $(".bg-text").css('display','none');
+        $(".blur").removeClass();
+    });
+
+    $(".scrollup").hide(); // 탑 버튼 숨김
     $(function () {
                  
         $(window).scroll(function () {
@@ -156,8 +178,7 @@ $(".scrollup").hide(); // 탑 버튼 숨김
             return false;
         });
     });
-
-</script>
+    </script>
 <!-- 바디 끝 -->
 </body>
 </html>

@@ -53,13 +53,11 @@
                 <li>
                     <div data-alt="img" data-description="<h3>Game name</h3>" data-max-width="1800" data-max-height="1350">
                         <div data-src="./img/gallery/grid/grid2.jpg"></div>
-                        
                     </div>
                 </li>
                 <li>
                     <div data-alt="img" data-description="<h3>Game name</h3>" data-max-width="1800" data-max-height="1550">
                         <div data-src="./img/gallery/grid/grid3.jpg" data-min-width="150"></div>
-                        
                     </div>
                 </li>
                 <li>
@@ -162,10 +160,10 @@
 							columns : 3
 						}, {
 							width : 500,
-							columns : 2
+							columns : 1
 						}, { 
 							width : 320,
-							columns : 2
+							columns : 1
 						}, { 
 							width : 0,
 							columns : 2

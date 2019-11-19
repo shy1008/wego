@@ -52,7 +52,7 @@ header{
     background-color: rgba(15,27,39,1);
     height: 63px;
     position: fixed;
-    z-index: 999;
+    z-index: 990;
     width: 100%;
 }
 .nav{
@@ -69,6 +69,83 @@ header{
 }
 .menu_right{
     float: right;
+}
+.floating-btn{
+    z-index: 30;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+}
+#submit{
+    width: 30% !important;
+    padding: 10px 0px 30px 0px !important;
+    cursor: pointer;
+}
+#login{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.bg-text p:last-child{
+    line-height: 2rem;
+    margin-top: 30px;
+}
+#login p{
+    text-align: right;
+    cursor: pointer;
+   
+}
+#login input{
+    display: block;
+    margin: 20px auto 0px;
+    width: 100%;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #3d5a74;
+    padding: 20px 10px;
+}
+.login_head{
+    background: linear-gradient(to bottom,#fff2d8 0,#ebc98b 50%,#c6a052 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.pass_find{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.blur{
+    filter:blur(20px);
+    z-index:-1;
+    
+  }
+.bg-text {
+    /* background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4);  */
+    color: white;
+    font-weight: bold;
+    /* border: 3px solid #f1f1f1; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 50;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    line-height: 3rem;
+    /* display:none; */
+}
+.but{
+    font-size: 30px;
+    position: fixed;
+    z-index: 999;
+    top: 13px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 .section1{
     background-image: url("../../img/m/main.jpg");

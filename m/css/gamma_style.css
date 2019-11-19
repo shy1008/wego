@@ -251,11 +251,11 @@ button.gamma-btn-sspause:before {
 }
 
 .gamma-nav span.gamma-prev:before {
-	content: url("../img/icon/left_arrow.png");
+	content: url("../../img/icon/left_arrow.png");
 }
 
 .gamma-nav span.gamma-next:before {
-	content: url("../img/icon/right_arrow.png");
+	content: url("../../img/icon/right_arrow.png");
 }
 
 .gamma-img-fly {
