@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
     <title>Wego</title>
+    <!-- <script src="./node_modules/web3-utils//web3/dist/web3.js" charset="utf-8"></script> -->
     <script>
     var uAgent = navigator.userAgent.toLowerCase();
     var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce', 'nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
@@ -159,7 +160,11 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./js/aos.js"></script>
 <script src="./js/blur.js"></script>
+<script src="./js/web3.js"></script>
 <script>
+var web3 = new Web3('ws://localhost:8545');
+console.log(web3);
+
     $(".but").click(function(){
         $(".but").css('display','none');
         $(".bg-text").css('display','none');

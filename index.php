@@ -143,6 +143,9 @@
 <script src="./js/aos.js"></script>
 
 <script>
+var web3 = new Web3('ws://localhost:7777');
+console.log(web3);
+
 $(".scrollup").hide(); // 탑 버튼 숨김
     $(function () {
                  
