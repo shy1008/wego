@@ -1,0 +1,99 @@
+.wrap{
+    width: 100%;
+}
+.store{
+    margin: 0 auto;
+    min-height: 930px;
+    background: rgb(14, 13, 13)
+}
+.store_img{ 
+    background-image: url(../img/bg3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    padding-top: 140px;
+    color: white;
+    text-align: center;
+}
+.store_img h2{
+    font-size: 64px;
+}
+.store_img p{
+    font-size: 36px;
+}
+/** Controls **/
+#controlsfilter{
+    /* margin-left: 150px; */
+}
+.controls {
+    padding:0.5em 0.25em 0.5em 1em;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    -goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    -moz-border-radius: 0;
+  }
+  
+  .filter, .controlslayout label{
+    color: #c1a56c;
+    border: 2px solid rgba(255,255,255,.1);
+    background-color: transparent;
+    padding: 15px;
+  }
+  
+  button, .button {
+    margin-bottom:0.5em;
+    outline:none;
+  }
+  
+  .controls button.active, .controlslayout input[type="radio"]:checked + label{
+    background: #007295;
+  }
+  
+  #controlslayout input[type="radio"]{
+    visibility:hidden;
+    height: 0;
+    width: 0;
+  }
+  
+  #controlslayout input[type="radio"]+label {
+    margin:0;
+  }
+  
+  .controlslayout {
+    display:block;
+  }
+  
+  #controlslayout .fa {
+    font-size:1.5em;
+    color:#ffffff;
+  }
+  
+  #labelgrid {
+    border-radius: 1000px 0 0 1000px;
+    padding-top: 0.5rem;
+    padding-right: .75rem;
+    padding-bottom: 0.3rem;
+    padding-left: 1rem;
+  }
+  
+  #labellist {
+    border-radius: 0 1000px 1000px 0;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.3rem;
+    padding-left: .75rem;
+  }
+  
+  /** Container **/
+  #Container .mix {
+    display:none;
+    
+  }
+  #Container .mix img{
+    width: 500px;
+  }
+  
+  #Container .large-block-grid-5>li:nth-of-type(5n+1), #Container .large-block-grid-5>li:nth-of-type(1n){
+    clear:none;
+  }
