@@ -1,0 +1,80 @@
+/* 최저해상도 1024 */
+@media screen and (max-width:1100px) {
+    .left_box{
+        width: 40%;
+    }
+    .right_box{
+        margin-top: 50px;
+    }
+    .section5 picture{
+        display: none;
+    }
+    .right_text_content{
+        top: 230px;
+        right: 0;
+    }
+    .section6{
+        margin-bottom: -680px;
+    }
+    .left_text_content{
+        top: 250px;
+    }
+    .right_text_content2 {
+        top: 0px;
+    }
+    #myVideo{
+        margin-left: 50vw;
+        transform: translate(-50%);
+    }
+}
+/* 1280,1366 스크린 포함 */
+@media screen and (min-width:1100px) and (max-width:1400px){
+
+    .left_box{
+        width: 40%;
+    }
+    .right_box{
+        margin-top: 50px;
+    }
+    .section5 picture{
+        display: none;
+    }
+    .section6{
+        margin-bottom: -680px;
+    }
+    .right_text_content{
+        top: 250px;
+        right: 0;
+    }
+    .left_text_content{
+        top: 330px;
+    }
+    .right_text_content2 {
+        top: 100px;
+        
+    }
+    #myVideo{
+        /* margin-left: 50vw; */
+        transform: translate(-50% -50%);
+    }
+}
+/* 1440,1600 스크린 포함 */
+@media screen and (min-width:1401px) and (max-width:1638px){
+    .section6{
+        margin-bottom: -500px;
+    }
+    .right_text_content{
+        top: 300px;
+        right: 0;
+    }
+    .left_text_content{
+        top: 330px;
+    }
+    .right_text_content2 {
+        top: 100px;
+    }
+    #myVideo{
+        /* margin-left: 50vw; */
+        transform: translate(-50% -50%);
+    }
+}

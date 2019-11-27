@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script> -->
+    <script src="./js/page.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/store.css">
     <link rel='stylesheet' href='https://cdn.foundation5.zurb.com/foundation.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css'>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"/>
     <title>store</title>
     <style>
+    body{
+        overflow-x: visible;
+    }
     .container{
         max-width: 100%;
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+    .paginationjs .paginationjs-pages{
+        float:right;
     }
     </style>
     <!-- <script>
@@ -39,7 +49,8 @@
     <!-- 단락시작 -->
         <div class="store_img">
             <h2>STORE</h2>
-            <p>V</p>        
+            <p>A complete list of collectable cards in Gods Unchained.</p>
+            <img src="./img/icon/arrow-down.png" alt="arrow_down" class="store_but">        
         </div>
         <section class="store">
         <div class="row">
@@ -48,10 +59,10 @@
                     <div class="row">
                         <!-- filter buttons -->
                         <div class="small-8 columns" id="controlsfilter">
-                        <button class="filter tiny round active" data-filter="all">All Item</button>
-                        <button class="filter tiny round" data-filter=".newyork">Mini Game1</button>
-                        <button class="filter tiny round" data-filter=".california">Mini Game2</button>
-                        <button class="filter tiny round" data-filter=".texas">Mini Game3</button>
+                        <button class="filter tiny round active showbar" data-filter="all">All Item</button>
+                        <button class="filter tiny round hidebar" data-filter=".newyork">Mini Game1</button>
+                        <button class="filter tiny round hidebar" data-filter=".california">Mini Game2</button>
+                        <button class="filter tiny round hidebar" data-filter=".texas">Mini Game3</button>
                         </div>
                         <!-- layout buttons -->
                         <!-- <div class="small-4 columns" id="controlslayout">
@@ -66,19 +77,13 @@
         <!-- container for images -->
         <div class="small-12 columns small-centered">
             <div class="container" id="Container">
-                <ul class="small-block-grid-3 medium-block-grid-4 large-block-grid-5">
-                    <li class="mix newyork"><img src="./img/gallery/grid/grid1.jpg"/></li>
-                    <li class="mix newyork"><img src="./img/gallery/grid/grid2.jpg"/></li>
-                    <li class="mix california"><img src="./img/gallery/grid/grid3.jpg"/></li>
-                    <li class="mix newyork"><img src="./img/gallery/grid/grid4.jpg"/></li>
-                    <li class="mix texas"><img src="./img/gallery/grid/grid5.png"/></li>
-                    <li class="mix newyork"><img src="./img/gallery/grid/grid6.jpg"/></li>
-                    <li class="mix newyork"><img src="./img/gallery/grid/grid7.png"/></li>
-                    <li class="mix california"><img src="./img/gallery/grid/grid8.jpg"/></li>
-                    <li class="mix california"><img src="./img/gallery/grid/grid9.jpg"/></li>
-                    <!-- <li class="gap"/>
-                    <li class="gap"/> -->
-                </ul>
+                <!-- 데이터영역 -->
+
+                <!-- 데이터뿌려줄영역 -->
+                <div id="data-container"></div>
+
+                <!-- 페이지바 -->
+                <div id="pagination"></div>
             </div>
         </div>
         </div>
@@ -92,7 +97,58 @@
 
 <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script>
+    $('.hidebar').click(function(){
+        $('#pagination').hide();
+    });
+    $('.showbar').click(function(){
+        $('#pagination').show();
+    });
+    $(".store_but").click(function(){
+        var offsetSection1 = $("#controlsfilter").offset();
+        
+        $('html,body').animate({
+            scrollTop:offsetSection1.top
+        },800)
+    })
+    $(function () {
+        let container = $('#pagination');
+        container.pagination({
+            dataSource: [
+                {url: "./img/card/card1.png", class:"newyork"},
+                {url: "./img/card/card2.png", class:"california"},
+                {url: "./img/card/card3.png", class:"newyork"},
+                {url: "./img/card/card4.png", class:"california"},
+                {url: "./img/card/card5.png", class:"newyork"},
+                {url: "./img/card/card6.png", class:"newyork"},
+                {url: "./img/card/card7.png", class:"california"},
+                {url: "./img/card/card8.png", class:"newyork"},
+                {url: "./img/card/card9.png", class:"california"},
+                {url: "./img/card/card1.png", class:"texas "},
+                {url: "./img/card/card2.png", class:"newyork "},
+                {url: "./img/card/card3.png", class:"texas "},
+                {url: "./img/card/card4.png", class:"newyork"},
+                {url: "./img/card/card5.png", class:"newyork "},
+                {url: "./img/card/card6.png", class:"texas "},
+                {url: "./img/card/card7.png", class:"newyork "},
+                {url: "./img/card/card8.png", class:"california "},
+            ],
+            pageSize:17,
+            callback: function (data, pagination) {
+                 var dataHtml = '<ul>';
+
+                $.each(data, function (index, item) {
+                    dataHtml += '<li class="mix ' + item.class + '" style="display:inline-block;">' + '<img src="' + item.url + '">' + '</li> ';
+                });
+
+                dataHtml += '</ul>';
+
+                $("#data-container").html(dataHtml);
+            }
+        })
+    })
+</script>
 <script src='https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js'></script>
 <script  src="./js/store.js"></script>
 

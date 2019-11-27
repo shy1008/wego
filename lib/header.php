@@ -1,10 +1,10 @@
 <nav>
     <ul class="menu_left">
-        <li><a href="./index.php"><img src="./img/Logo.png" alt="logo" style="width:32px; opacity: 1;"></a></li>
-        <li><a href="./index.php"><img src="./img/icon/32/home.png" alt="sub_menu1"></a></li>
-        <li><a href="./gallery.php"><img src="./img/icon/32/compass.png" alt="sub_menu2"></a></li>
-        <li class="open"><a href="./store.php"><img src="./img/icon/32/bag.png" alt="sub_menu3"></a></li>
-        <li><a href="./faq.php"><img src="./img/icon/32/hand.png" alt="sub_menu4"></a></li>
+        <li ><a href="http://wegochain.io/?lang=kr" ><img src="./img/Logo.png" alt="logo" style="width:32px; opacity: 1;"></a></li>
+        <li ><a href="./index.php" class="active menu"><img src="./img/icon/32/home.png" alt="sub_menu1"></a></li>
+        <li><a href="./gallery.php" class="menu"><img src="./img/icon/32/compass.png" alt="sub_menu2"></a></li>
+        <li ><a href="./store.php" class="menu"><img src="./img/icon/32/bag.png" alt="sub_menu3"></a></li>
+        <li><a href="./faq.php" class="menu"><img src="./img/icon/32/hand.png" alt="sub_menu4"></a></li>
     </ul>
     <ul class="menu_right">
         <li><a href="./login.php"><img src="./img/login_button.png" alt="login" style="height:35px; cursor:pointer; opacity:.8;"> </a></li>
@@ -12,3 +12,4 @@
     </ul>
 </nav>
 <!-- https://codepen.io/elenanicole53/pen/rsiDj -->
+

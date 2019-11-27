@@ -32,7 +32,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 html,body {
-    min-width: 1635px;
     overflow-x: hidden;
     font-family: 'Noto Sans', sans-serif;
     /* font-family: 'Noto Sans KR', sans-serif; */
@@ -71,8 +70,7 @@ header{
     align-items: center;
 }
 .menu_left li{
-    opacity: .5;
-    cursor: pointer;
+    
 }
 .menu_left li:first-child{
     opacity: 1;
@@ -377,22 +375,6 @@ article{
     /* background-size: cover; */
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
     min-width: 100% !important;
     width: 100%;
@@ -438,3 +420,4 @@ footer{
     }
     
 }
+

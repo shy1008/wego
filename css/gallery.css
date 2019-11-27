@@ -6,7 +6,7 @@
 
 .gallery_title_wrap{
     /* 최저 해상도 */
-    min-width: 1280px;
+    min-width: 1024px;
     padding: 80px 40px;
     text-align: center;
 }

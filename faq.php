@@ -109,7 +109,6 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
 <script src="./js/faq.js"></script>
-
 <!-- 바디 끝 -->
 </body>
 </html>

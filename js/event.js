@@ -10,6 +10,15 @@ $(document).ready(function(){
             }
         }); 
     });
+    $('.gallery_title_img').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      arrows:false,
+      autoplay:true
+    });
     $('.slide').slick({
           slidesToShow: 5,
           slidesToScroll: 1,
@@ -25,7 +34,7 @@ $(document).ready(function(){
           autoplaySpeed: 1000,
           responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1300,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1

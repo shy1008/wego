@@ -10,17 +10,32 @@
     background-image: url(../img/bg3.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    height: 600px;
-    padding-top: 140px;
+    height: 800px;
+    padding-top: 250px;
     color: white;
     text-align: center;
 }
 .store_img h2{
     font-size: 64px;
+    font-family: 'Noto Sans', sans-serif;
 }
 .store_img p{
-    font-size: 36px;
+    font-size: 30px;
+}
+.store_img img{
+  margin-top: 250px;
+  width: 50px;
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+  cursor: pointer;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover{
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
 }
 /** Controls **/
 #controlsfilter{
@@ -88,10 +103,12 @@
   /** Container **/
   #Container .mix {
     display:none;
-    
+    /* display: inline-block; */
   }
+
   #Container .mix img{
-    width: 500px;
+    width: 300px;
+    
   }
   
   #Container .large-block-grid-5>li:nth-of-type(5n+1), #Container .large-block-grid-5>li:nth-of-type(1n){

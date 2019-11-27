@@ -34,13 +34,16 @@
     <section class="gallery">
         <div class="gallery_title_wrap">
             <div class="gallery_title_img">
-                <div></div>
+                <div style="background:#f8d790";>1</div>
+                <div style="background:#6de687";>2</div>
+                <div style="background:#3facb8";>3</div>
             </div>
             <div class="gallery_title_text">
                 <div>The Hearthstone player’s guide to Gods Unchained</br><span>13 NOV 2019</span></div>
                 <div>New Player Guide: Learn The Basics</br><span>15 OCT 2019</span></div>
                 <div>12 Essential Card Mechanics</br><span>27 SEP 2019</span></div>
             </div>
+          
         </div>
         <div class="gamma-container gamma-loading" id="gamma-container">
             <ul class="gamma-gallery">
@@ -121,7 +124,7 @@
 
             <div class="gamma-overlay"></div>
  
-  <!--          오류 있음;;;;고치고싶다..
+<!-- more button
             <div id="loadmore" class="loadmore">more ...</div> -->
 
         </div>
@@ -130,7 +133,7 @@
     <!-- 단락끝 -->
     </section>
     <footer>
-          <?php include "./lib/footer.php"; ?>
+          <?php include "./lib/footer.php";?>
     <!-- 푸터끝 --> 
     </footer>
   <!-- wrap끝 -->
@@ -143,64 +146,57 @@
 <script src="./js/blur.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./js/aos.js"></script>
-
 <script src="./js/jquery.masonry.min.js"></script>
 <script src="js/gamma.js"></script>
 <script type="text/javascript">
-			
-			$(function() {
+    $(".gallery_title_text").click(function(){
+        var offsetSection1 = $(".gamma-gallery").offset();
+        
+        $('html,body').animate({
+            scrollTop:offsetSection1.top
+        },800)
+    })
+    $(function() {
+        var GammaSettings = {
+            // order is important!
+            viewport : [ {
+                width : 1200,
+                columns : 3
+            }, {
+                width : 900,
+                columns : 3
+            }, {
+                width : 500,
+                columns : 1
+            }, { 
+                width : 320,
+                columns : 1
+            }, { 
+                width : 0,
+                columns : 2
+            } ]
+        };
 
-				var GammaSettings = {
-						// order is important!
-						viewport : [ {
-							width : 1200,
-							columns : 3
-						}, {
-							width : 900,
-							columns : 3
-						}, {
-							width : 500,
-							columns : 1
-						}, { 
-							width : 320,
-							columns : 1
-						}, { 
-							width : 0,
-							columns : 2
-						} ]
-				};
+        Gamma.init( GammaSettings, fncallback );
 
-				Gamma.init( GammaSettings, fncallback );
+        // Example how to add more items (just a dummy):
 
+        var page = 0,
+        items = ['<li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="./img/gallery/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="./img/gallery/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="./img/gallery/xlarge/3.jpg" data-min-width="700"></div><div data-src="./img/gallery/large/3.jpg" data-min-width="300"></div><div data-src="./img/gallery/medium/3.jpg" data-min-width="200"></div><div data-src="./img/gallery/small/3.jpg" data-min-width="140"></div><div data-src="./img/gallery/xsmall/3.jpg"></div><noscript><img src="./img/gallery/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="./img/gallery/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="./img/gallery/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="./img/gallery/xlarge/3.jpg" data-min-width="700"></div><div data-src="./img/gallery/large/3.jpg" data-min-width="300"></div><div data-src="./img/gallery/medium/3.jpg" data-min-width="200"></div><div data-src="./img/gallery/small/3.jpg" data-min-width="140"></div><div data-src="./img/gallery/xsmall/3.jpg"></div><noscript><img src="./img/gallery/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="./img/gallery/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="./img/gallery/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="./img/gallery/xlarge/3.jpg" data-min-width="700"></div><div data-src="./img/gallery/large/3.jpg" data-min-width="300"></div><div data-src="./img/gallery/medium/3.jpg" data-min-width="200"></div><div data-src="./img/gallery/small/3.jpg" data-min-width="140"></div><div data-src="./img/gallery/xsmall/3.jpg"></div><noscript><img src="./img/gallery/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="./img/gallery/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="./img/gallery/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="./img/gallery/xlarge/3.jpg" data-min-width="700"></div><div data-src="./img/gallery/large/3.jpg" data-min-width="300"></div><div data-src="./img/gallery/medium/3.jpg" data-min-width="200"></div><div data-src="./img/gallery/small/3.jpg" data-min-width="140"></div><div data-src="./img/gallery/xsmall/3.jpg"></div><noscript><img src="./img/gallery/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="./img/gallery/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="./img/gallery/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="./img/gallery/xlarge/3.jpg" data-min-width="700"></div><div data-src="./img/gallery/large/3.jpg" data-min-width="300"></div><div data-src="./img/gallery/medium/3.jpg" data-min-width="200"></div><div data-src="./img/gallery/small/3.jpg" data-min-width="140"></div><div data-src="./img/gallery/xsmall/3.jpg"></div><noscript><img src="./img/gallery/xsmall/3.jpg" alt="img03"/></noscript></div></li>']
+        function fncallback() {
+            $( '#loadmore' ).show().on( 'click', function() {
+                ++page;
+                var newitems = items[page-1]
+                if( page <= 1 ) {
+                    Gamma.add( $( newitems ) );
+                }
+                if( page === 1 ) {
 
-				// Example how to add more items (just a dummy):
-
-				var page = 0,
-					items = ['<li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="./img/gallery/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="./img/gallery/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="./img/gallery/xlarge/3.jpg" data-min-width="700"></div><div data-src="./img/gallery/large/3.jpg" data-min-width="300"></div><div data-src="./img/gallery/medium/3.jpg" data-min-width="200"></div><div data-src="./img/gallery/small/3.jpg" data-min-width="140"></div><div data-src="./img/gallery/xsmall/3.jpg"></div><noscript><img src="./img/gallery/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="./img/gallery/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="./img/gallery/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="./img/gallery/xlarge/3.jpg" data-min-width="700"></div><div data-src="./img/gallery/large/3.jpg" data-min-width="300"></div><div data-src="./img/gallery/medium/3.jpg" data-min-width="200"></div><div data-src="./img/gallery/small/3.jpg" data-min-width="140"></div><div data-src="./img/gallery/xsmall/3.jpg"></div><noscript><img src="./img/gallery/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="./img/gallery/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="./img/gallery/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="./img/gallery/xlarge/3.jpg" data-min-width="700"></div><div data-src="./img/gallery/large/3.jpg" data-min-width="300"></div><div data-src="./img/gallery/medium/3.jpg" data-min-width="200"></div><div data-src="./img/gallery/small/3.jpg" data-min-width="140"></div><div data-src="./img/gallery/xsmall/3.jpg"></div><noscript><img src="./img/gallery/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="./img/gallery/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="./img/gallery/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="./img/gallery/xlarge/3.jpg" data-min-width="700"></div><div data-src="./img/gallery/large/3.jpg" data-min-width="300"></div><div data-src="./img/gallery/medium/3.jpg" data-min-width="200"></div><div data-src="./img/gallery/small/3.jpg" data-min-width="140"></div><div data-src="./img/gallery/xsmall/3.jpg"></div><noscript><img src="./img/gallery/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="./img/gallery/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="./img/gallery/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="./img/gallery/xlarge/3.jpg" data-min-width="700"></div><div data-src="./img/gallery/large/3.jpg" data-min-width="300"></div><div data-src="./img/gallery/medium/3.jpg" data-min-width="200"></div><div data-src="./img/gallery/small/3.jpg" data-min-width="140"></div><div data-src="./img/gallery/xsmall/3.jpg"></div><noscript><img src="./img/gallery/xsmall/3.jpg" alt="img03"/></noscript></div></li>']
-
-				function fncallback() {
-
-					$( '#loadmore' ).show().on( 'click', function() {
-
-						++page;
-						var newitems = items[page-1]
-						if( page <= 1 ) {
-							
-							Gamma.add( $( newitems ) );
-
-						}
-						if( page === 1 ) {
-
-							$( this ).remove();
-
-						}
-
-					} );
-
-				}
-
-			});
-
+                    $( this ).remove();
+                }
+            } );
+        }
+    });
 		</script>	
 <!-- 바디 끝 -->
 </body>

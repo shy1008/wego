@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/main-media.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -18,7 +19,12 @@
             document.location = "../wego/m/index.php"
         }
     }
-    </script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    </script>   
+    <style>
+    body{
+      min-width: 1024px;
+    }
+    </style>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 </head>
 <!-- 바디시작 -->
 <body>
@@ -46,13 +52,13 @@
 <!-- 단락 -->
         <section class="section2">
             <div class="slide" >
-                <div><img src="./img/item/item.png" alt="item1" ></div>
-                <div><img src="./img/item/item3.png" alt="item2" style="height:320px;"></div>
-                <div><img src="./img/item/item5.png" alt="item3" style="height:320px;"></div>
-                <div><img src="./img/item/item4.png" alt="item4" style="height:320px;"></div>
-                <div><img src="./img/item/item2.png" alt="item5" style="height:320px;"></div>
-                <div><img src="./img/item/item7.png" alt="item6" style="height:320px;"></div>
-                <div><img src="./img/item/item6.png" alt="item7" style="height:320px;"></div>
+                <div><img src="./img/card/card1.png" alt="item1" style="height:320px;"></div>
+                <div><img src="./img/card/card2.png" alt="item2" style="height:320px;"></div>
+                <div><img src="./img/card/card3.png" alt="item3" style="height:320px;"></div>
+                <div><img src="./img/card/card4.png" alt="item4" style="height:320px;"></div>
+                <div><img src="./img/card/card5.png" alt="item5" style="height:320px;"></div>
+                <div><img src="./img/card/card6.png" alt="item6" style="height:320px;"></div>
+                <div><img src="./img/card/card7.png" alt="item7" style="height:320px;"></div>
             </div>
         </section>
 <!-- 단락 -->
@@ -141,7 +147,11 @@
 <script src="./js/blur.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./js/aos.js"></script>
-
+<script>
+ $('.menu_left li').click(function(){
+    $('.menu_left li').css('background','blue');
+ });
+</script>
 <script>
 var web3 = new Web3('ws://localhost:7777');
 console.log(web3);
