@@ -55,15 +55,22 @@ header{
     align-items: center;
 }
 .menu_left li{
-    opacity: .5;
-    cursor: pointer;
+	cursor: pointer;
+	opacity: .7;
+	height: 51px;
 }
 .menu_left li:first-child{
-    opacity: 1;
+	opacity: 1;
+	padding-top: 3px;
 }
 .menu_left li:hover{
     opacity: 1;
     font-weight: bold;
+}
+.menu_left p{
+    font-size: 10px;
+	color: white;
+	padding-top: 3px;
 }
 .menu_right{
     display: inline-flex;

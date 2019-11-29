@@ -28,9 +28,9 @@
 </head>
 <!-- 바디시작 -->
 <body>
-<a href="#page-top" class="floating-btn scrollup">
-  <img src="./img/icon/up64.png" alt="floating-btn" >	
-</a>
+  <a href="#page-top" class="floating-btn scrollup">
+    <img src="./img/icon/up64.png" alt="floating-btn" >	
+  </a>
   <!-- wrap시작 -->
     <div id="wrap">
         <header>
@@ -147,11 +147,6 @@
 <script src="./js/blur.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./js/aos.js"></script>
-<script>
- $('.menu_left li').click(function(){
-    $('.menu_left li').css('background','blue');
- });
-</script>
 <script>
 var web3 = new Web3('ws://localhost:7777');
 console.log(web3);

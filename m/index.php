@@ -44,13 +44,13 @@
 <!-- 단락 -->
     <section class="section2">
       <div class="slide" >
-          <div><img src="../img/item/item.png" alt="item1" class="slide_item"></div>
-          <div><img src="../img/item/item2.png" alt="item2" class="slide_item"></div>
-          <div><img src="../img/item/item3.png" alt="item3" class="slide_item"></div>
-          <div><img src="../img/item/item4.png" alt="item4" class="slide_item"></div>
-          <div><img src="../img/item/item5.png" alt="item5" class="slide_item"></div>
-          <div><img src="../img/item/item6.png" alt="item6" class="slide_item"></div>
-          <div><img src="../img/item/item7.png" alt="item7" class="slide_item"></div>
+          <div><img src="../img/card/card1.png" alt="item1" class="slide_item"></div>
+          <div><img src="../img/card/card2.png" alt="item2" class="slide_item"></div>
+          <div><img src="../img/card/card3.png" alt="item3" class="slide_item"></div>
+          <div><img src="../img/card/card4.png" alt="item4" class="slide_item"></div>
+          <div><img src="../img/card/card5.png" alt="item5" class="slide_item"></div>
+          <div><img src="../img/card/card6.png" alt="item6" class="slide_item"></div>
+          <div><img src="../img/card/card7.png" alt="item7" class="slide_item"></div>
       </div>
     </section>
 <!-- 단락 -->

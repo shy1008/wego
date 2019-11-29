@@ -38,13 +38,15 @@
 <!-- 단락 -->
     <section class="gallery">
         <div class="gallery_title_wrap">
-            <div class="gallery_title_img">
-                <div> 90vw * 260px</div>
+        <div class="gallery_title_img">
+                <div style="background:#f8d790";>1</div>
+                <div style="background:#6de687";>2</div>
+                <div style="background:#3facb8";>3</div>
             </div>
             <div class="gallery_title_text">
                 <div>The Hearthstone player’s guide to Gods Unchained</br><span>13 NOV 2019</span></div>
-                <div>New Player Guide: Learn The Basics</br><span>15 OCT 2019</span></div>
-                <div>12 Essential Card Mechanics</br><span>27 SEP 2019</span></div>
+                <!-- <div>New Player Guide: Learn The Basics</br><span>15 OCT 2019</span></div>
+                <div>12 Essential Card Mechanics</br><span>27 SEP 2019</span></div> -->
             </div>
         </div>
         <div class="gamma-container gamma-loading" id="gamma-container">
@@ -150,10 +152,16 @@
 <script src="../js/event.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="../js/aos.js"></script>
-
 <script src="../js/jquery.masonry.min.js"></script>
 <script src="../js/gamma.js"></script>
 <script type="text/javascript">
+$(".gallery_title_text").click(function(){
+        var offsetSection1 = $(".gamma-gallery").offset();
+        
+        $('html,body').animate({
+            scrollTop:offsetSection1.top
+        },800)
+    })
 			
 			$(function() {
 

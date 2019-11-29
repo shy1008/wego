@@ -70,7 +70,7 @@ header{
     align-items: center;
 }
 .menu_left li{
-    
+    opacity: .7;
 }
 .menu_left li:first-child{
     opacity: 1;
@@ -78,6 +78,10 @@ header{
 .menu_left li:hover{
     opacity: 1;
     font-weight: bold;
+}
+.menu_left p{
+    font-size: 10px;
+    color: white;
 }
 .menu_right{
     display: inline-flex;
@@ -403,20 +407,10 @@ footer{
 .footer_menu li:hover{
     color: yellow;
 }
-.hoho{
-    display: none;
-}
-
 @media screen and (max-width:960px) {
-    /* .hoho{ 
-        display: inline;
-    }
-    .hoho2{ 
-        display:none;
-   } */
    .container{
-    padding-left: 3rem;
-    padding-right: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
     
 }

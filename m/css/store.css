@@ -1,0 +1,113 @@
+.wrap{
+    width: 100%;
+}
+.store{
+    margin: 0 auto;
+    min-height: 930px;
+    background: rgb(14, 13, 13)
+}
+.store_img{ 
+    background-image: url(../../img/bg3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    padding-top: 165px;
+    color: white;
+    text-align: center;
+}
+.store_img h2{
+    font-size: 3rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+.store_img p{
+    margin-top: 40px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.store_img img{
+    margin-top: 250px;
+    width: 50px;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+    cursor: pointer;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover{
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+/** Controls **/
+#controlsfilter{
+    /* margin-left: 150px; */
+}
+.controls {
+    padding:0.5em;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    -goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    -moz-border-radius: 0;
+}
+.filter, .controlslayout label{
+    color: #c1a56c;
+    border: 2px solid rgba(255,255,255,.1);
+    background-color: transparent;
+    padding: 6px;
+}
+button, .button {
+    margin-bottom:0.5em;
+    outline:none;
+}
+.controls button.active, .controlslayout input[type="radio"]:checked + label{
+    background: #007295;
+}
+#controlslayout input[type="radio"]{
+    visibility:hidden;
+    height: 0;
+    width: 0;
+}
+#controlslayout input[type="radio"]+label {
+    margin:0;
+}
+
+.controlslayout {
+    display:block;
+}
+
+#controlslayout .fa {
+    font-size:1.5em;
+    color:#ffffff;
+}
+
+#labelgrid {
+    border-radius: 1000px 0 0 1000px;
+    padding-top: 0.5rem;
+    padding-right: .75rem;
+    padding-bottom: 0.3rem;
+    padding-left: 1rem;
+}
+
+#labellist {
+    border-radius: 0 1000px 1000px 0;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.3rem;
+    padding-left: .75rem;
+}
+
+/** Container **/
+#Container .mix {
+    display:none;
+/* display: inline-block; */
+}
+#Container .mix img{
+    width: 100px;
+}
+#Container .large-block-grid-5>li:nth-of-type(5n+1), #Container .large-block-grid-5>li:nth-of-type(1n){
+    clear:none;
+}
+.paginationjs .paginationjs-pages{
+    float: right !important;
+}

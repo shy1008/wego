@@ -5,36 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/faq.css">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
-    <title>faq</title>
+    <title>Wego</title>
     <style>
     .overlay{
         min-height: 100vh;
         margin-top: 63px;  
     }
     </style>
-    <!-- <script>
-    var uAgent = navigator.userAgent.toLowerCase();
-    var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce', 'nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
-    for (var i = 0; i < mobilePhones.length; i++) {
-        if (uAgent.indexOf(mobilePhones[i]) != -1) {
-            document.location = "../wego/m/index.php"
-        }
-    }
-    </script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           -->
 </head>
-
 <!-- 바디시작 -->
 <body>
-  <!-- wrap시작 -->
-    <div id="wrap">
-        <header>
-          <?php include "./lib/header.php"; ?>
-        </header>
-    <!-- 단락시작 -->
-        <article>
+<a href="#page-top" class="floating-btn scrollup">
+  <img src="../img/icon/up32.png" alt="floating-btn" >	
+</a>
+<!-- wrap시작 -->
+  <div id="wrap">
+  <!-- 헤더시작 --> 
+    <header>
+      <?php include "./lib/header.php"; ?>
+  <!-- 헤더끝 --> 
+    </header>
+    <article>
         <div class="overlay">
         <div class="container2">
             <h2>Frequently Asked Questions</h2>
@@ -96,18 +90,46 @@
     <!-- 단락끝 -->
         </article>
     
+          <!-- 푸터시작 -->
+         
+    <!-- 단락끝 -->
+    </section>
+<!-- 단락 -->
 
-        <footer>
-            <?php include "./lib/footer.php"; ?>
-        <!-- 푸터끝 --> 
-        </footer>
-  <!-- wrap끝 -->
-    </div>
+    <!-- 푸터시작 -->
+    <footer>
+      <?php include "./lib/footer.php"; ?>
+<!-- 푸터끝 --> 
+    </footer>
+<!-- wrap끝 -->
+  </div>
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
-<script src="./js/faq.js"></script>
+<!-- <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script> -->
+<script src="../js/faq.js"></script>
+<script type="text/javascript">
+      $(".scrollup").hide(); // 탑 버튼 숨김
+        $(function () {
+                    
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 900 ) { // 스크롤 내릴 표시
+                    $('.scrollup').fadeIn();
+                } else {
+                    $('.scrollup').fadeOut();
+                }
+            });
+                    
+            $('.scrollup').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 600);  // 탑 이동 스크롤 속도
+                return false;
+            });
+        });
+      
+
+		</script>	
 <!-- 바디 끝 -->
 </body>
 </html>

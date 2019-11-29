@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script> -->
     <script src="./js/page.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/store.css">
@@ -64,11 +62,6 @@
                         <button class="filter tiny round hidebar" data-filter=".california">Mini Game2</button>
                         <button class="filter tiny round hidebar" data-filter=".texas">Mini Game3</button>
                         </div>
-                        <!-- layout buttons -->
-                        <!-- <div class="small-4 columns" id="controlslayout">
-                        <div class="controlslayout">
-                        <input type="radio" class="grid" checked="checked" name="layout" id="grid"><label id="labelgrid" for="grid"><i class="fa fa-th"></i></label></input><input type="radio" class="list" name="layout" id="list"><label id="labellist" for="list"><i class="fa fa-bars"></i></label></input></div>
-                        </div> -->
                     </div>
                 </fieldset>
             </div>
@@ -77,12 +70,9 @@
         <!-- container for images -->
         <div class="small-12 columns small-centered">
             <div class="container" id="Container">
-                <!-- 데이터영역 -->
-
-                <!-- 데이터뿌려줄영역 -->
+                <!-- data -->
                 <div id="data-container"></div>
-
-                <!-- 페이지바 -->
+                <!-- pagebar -->
                 <div id="pagination"></div>
             </div>
         </div>
