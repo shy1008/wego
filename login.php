@@ -151,8 +151,9 @@
 <script src="./js/blur.js"></script>
 <script src="./js/web3.js"></script>
 <script>
-var web3 = new Web3('ws://localhost:8545');
-console.log(web3);
+// var web3 = new Web3('ws://localhost:8545');
+// console.log(web3);
+
   $(".but").click(function(){
       $(".but").css('display','none');
       $(".bg-text").css('display','none');

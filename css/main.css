@@ -79,6 +79,9 @@ header{
     opacity: 1;
     font-weight: bold;
 }
+.menu_left li.active{
+    background: yellow;
+}
 .menu_left p{
     font-size: 10px;
     color: white;

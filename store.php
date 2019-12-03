@@ -8,7 +8,7 @@
     <script src="./js/page.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/store.css">
-    <link rel='stylesheet' href='https://cdn.foundation5.zurb.com/foundation.css'>
+    <!-- <link rel='stylesheet' href='https://cdn.foundation5.zurb.com/foundation.css'> -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css'>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"/>
@@ -89,6 +89,7 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
 
 <script>
+
     $('.hidebar').click(function(){
         $('#pagination').hide();
     });

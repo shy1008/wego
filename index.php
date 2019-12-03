@@ -19,6 +19,7 @@
             document.location = "../wego/m/index.php"
         }
     }
+    
     </script>   
     <style>
     body{
@@ -148,27 +149,37 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./js/aos.js"></script>
 <script>
-var web3 = new Web3('ws://localhost:7777');
-console.log(web3);
+// var web3 = new Web3('ws://localhost:7777');
+// console.log(web3);
+
+// function active(a){
+//   var _lnb = document.querySelectorAll('.on');
+
+//   for(let i = 0; i<_lnb.length; i++){
+//     _lnb[i].className = 'on'
+//   }
+//   _lnb[a].className = 'active on'
+//   // console.log(a);
+// }
 
 $(".scrollup").hide(); // 탑 버튼 숨김
-    $(function () {
-                 
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 900 ) { // 스크롤 내릴 표시
-                $('.scrollup').fadeIn();
-            } else {
-                $('.scrollup').fadeOut();
-            }
-        });
-                
-        $('.scrollup').click(function () {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 600);  // 탑 이동 스크롤 속도
-            return false;
-        });
+$(function () {
+              
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 900 ) { // 스크롤 내릴 표시
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
     });
+            
+    $('.scrollup').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 600);  // 탑 이동 스크롤 속도
+        return false;
+    });
+});
 
 </script>
 <!-- 바디 끝 -->

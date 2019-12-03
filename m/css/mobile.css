@@ -63,15 +63,15 @@ header{
 .nav li{
     display: inline-block;
     padding: 0 2%;
+    opacity: .7;
 }
 
 .nav li p{
     font-size: .7rem;
     color: white;
     margin-top: .2rem;
-    font-style: bold;
-    font-weight: bold;
-    color: rgb(43, 43, 44);
+    /* font-weight: bold; */
+    color: #ffffff;
 }
 .menu_left{
     float: left;
