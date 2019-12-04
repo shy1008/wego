@@ -32,10 +32,37 @@
   <a href="#page-top" class="floating-btn scrollup">
     <img src="./img/icon/up64.png" alt="floating-btn" >	
   </a>
+  <div class="dim-layer">
+    <div class="dimBg"></div>
+    <div id="layer2" class="pop-layer">
+        <div class="pop-container">
+            <div class="pop-conts">
+                <!--content //-->
+                <button class="but"><img src="./img/icon/x64.png" alt="close"></button>
+                <div class="bg-text">
+                    <h1 class="login_head">SIGN IN TO GODS UNCHAINED</h1>
+                    <button onClick="openTextFile()">open</button>
+                    <form action="" method="post" id="login">
+                        <!-- <input type="email" name="email" value="Email Address" placeholder="Email Address" id="email"> -->
+                        <!-- <input type="file" name="file" id="file"> -->
+                        <div id='output'>...</div>
+                        <input type="password" name="email" value="Password" placeholder ="Password" id="password">
+                        <p>Forgot password?</p>
+                        <input type="submit" value="LOGIN" id="submit">
+                    </form>
+                    <p>No account? <span class="pass_find">Register</span> to claim your free core pack!</p>
+                </div>
+                <!--// content-->
+            </div>
+        </div>
+    </div>
+  </div>
+  
   <!-- wrap시작 -->
     <div id="wrap">
+    
         <header>
-          <?php include "./lib/header.php"; ?>
+          <?php $page = 'home'; include "./lib/header.php"; ?>
         </header>
 <!-- 단락 -->
         <section class="section1 container">
@@ -80,6 +107,7 @@
             <span style="font-size:45px;">Exclusive Presale Packs</span><br/> A completely limited edition Genesis Season of 380 unique cards. Only available before game launch, and hard-capped at $15M. Don’t miss out.
           </div>
           </div>
+          
         </section>
 <!-- 단락 -->
         <section class="section5">
@@ -89,7 +117,6 @@
           <picture>
             <source srcset="./img/troll.webp" type="image/webp" style="width:100%;"/> <img src="./img/bg1.jpg" style="float:right; position:relative; top:-380px; right:150px;" />
           </picture>
-
         </section>
 <!-- 단락 -->
         <section class="section6">
@@ -143,14 +170,20 @@
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script type="text/javascript" src="./slick/slick.min.js"></script>
 <script src="./js/event.js"></script>
 <script src="./js/blur.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./js/aos.js"></script>
+<script src="./js/popup.js"></script>
 <script>
-// var web3 = new Web3('ws://localhost:7777');
-// console.log(web3);
+var web3 = new Web3("http://121.140.127.51:7766");
+
+function login(){
+  web3.eth.accounts.decrypt(decryptjson,1q2w3e4r5t);
+}
+console.log(web3);
 
 // function active(a){
 //   var _lnb = document.querySelectorAll('.on');
@@ -161,7 +194,35 @@
 //   _lnb[a].className = 'active on'
 //   // console.log(a);
 // }
+function openTextFile(){
+  var input = document.createElement("input");
 
+  input.type = "file";
+  input.accept = "text/plain";
+
+  input.onchange = function(event){
+    processFile(event.target.files[0]);
+  };
+
+  input.click();
+
+}
+
+function processFile(file){
+  var reader = new FileReader();
+
+  reader.onload = function(){
+    var decryptjson = reader.result;
+  };
+
+  reader.readAsText(file, "ANSI");
+}
+
+$(".but").click(function(){
+      $(".dim-layer").css('display','none');
+      
+      $(".blur").removeClass();
+  });
 $(".scrollup").hide(); // 탑 버튼 숨김
 $(function () {
               

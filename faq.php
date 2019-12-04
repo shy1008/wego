@@ -31,7 +31,7 @@
   <!-- wrap시작 -->
     <div id="wrap">
         <header>
-          <?php include "./lib/header.php"; ?>
+          <?php $page = 'faq'; include "./lib/header.php"; ?>
         </header>
     <!-- 단락시작 -->
         <article>

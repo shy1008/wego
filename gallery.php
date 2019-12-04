@@ -28,7 +28,7 @@
   <!-- wrap시작 -->
     <div id="wrap">
         <header>
-          <?php include "./lib/header.php"; ?>
+          <?php $page = 'gallery'; include "./lib/header.php"; ?>
         </header>
     <!-- 단락시작 -->
     <section class="gallery">

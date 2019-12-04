@@ -42,7 +42,7 @@
   <!-- wrap시작 -->
     <div id="wrap">
         <header>
-          <?php include "./lib/header.php";?>
+          <?php $page = 'store'; include "./lib/header.php";?>
         </header>
     <!-- 단락시작 -->
         <div class="store_img">
