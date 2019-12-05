@@ -28,6 +28,7 @@
 
 <!-- 바디시작 -->
 <body>
+<?php include "./lib/login_form.php"; ?>
   <!-- wrap시작 -->
     <div id="wrap">
         <header>
@@ -108,6 +109,7 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
 <script src="./js/faq.js"></script>
+<script src="./js/popup.js"></script>
 <script>
 
 </script>

@@ -1,7 +1,6 @@
 $('.btn-example').click(function(){
     var $href = $(this).attr('href');
     $("#wrap").addClass("blur");
-    $("body").css('overflow-y','hidden');
     layer_popup($href);
 });
 function layer_popup(el){
@@ -10,7 +9,6 @@ function layer_popup(el){
     var isDim = $el.prev().hasClass('dimBg');	//dimmed 레이어를 감지하기 위한 boolean 변수
 
     isDim ? $('.dim-layer').fadeIn() : $el.fadeIn();
-    // $('#wrap').addClass('.blur');
 
     var $elWidth = ~~($el.outerWidth()),
         $elHeight = ~~($el.outerHeight()),
@@ -39,3 +37,7 @@ function layer_popup(el){
     });
 
 }
+$(".but").click(function(){
+    $(".dim-layer").css('display','none');
+    $(".blur").removeClass();
+});

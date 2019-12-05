@@ -50,3 +50,99 @@
     color: #efddba;
     font-size: 12px;
 }
+.floating-btn{
+    z-index: 30;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+}
+#submit{
+    width: 30% !important;
+    padding: 10px 0px 30px 0px !important;
+    cursor: pointer;
+}
+#login{
+    max-width: 400px;
+    margin: 0 auto;
+}
+#login p{
+    text-align: right;
+    cursor: pointer;
+}
+#login input{
+    display: block;
+    margin: 20px auto 0px;
+    width: 100%;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #3d5a74;
+    padding: 20px 10px;
+}
+.login_head{
+    background: linear-gradient(to bottom,#fff2d8 0,#ebc98b 50%,#c6a052 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.pass_find{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.blur{
+    filter:blur(20px);
+    z-index:-1;
+    
+  }
+.bg-text {
+    /* background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4);  */
+    color: white;
+    font-weight: bold;
+    /* border: 3px solid #f1f1f1; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 50;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    line-height: 5rem;
+    /* display:none; */
+}
+.but{
+    font-size: 30px;
+    position: fixed;
+    z-index: 999;
+    top: 60px;
+    right: 100px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.dim-layer {
+    display: none;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.dim-layer .dimBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    filter: blur(20px);
+}
+.dim-layer .pop-layer {
+    display: block;
+  }

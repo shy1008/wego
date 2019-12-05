@@ -76,6 +76,9 @@ header{
 .menu_left li:first-child{
     opacity: 1;
 }
+.menu_left li a{
+    text-decoration: none;
+}
 .menu_left li:hover{
     opacity: 1;
 }
@@ -85,6 +88,8 @@ header{
 .menu_left p{
     font-size: 10px;
     color: white;
+    cursor: pointer;
+    
 }
 .menu_right{
     display: inline-flex;
@@ -150,7 +155,7 @@ header{
 
 .blur{
     filter:blur(20px);
-    z-index:-1;
+    z-index:1;
     
   }
 .bg-text {

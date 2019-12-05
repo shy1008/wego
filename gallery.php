@@ -25,6 +25,7 @@
 </head>
 <!-- 바디시작 -->
 <body>
+  <?php include "./lib/login_form.php"; ?>
   <!-- wrap시작 -->
     <div id="wrap">
         <header>
@@ -147,7 +148,9 @@
 <script src="./js/aos.js"></script>
 <script src="./js/jquery.masonry.min.js"></script>
 <script src="js/gamma.js"></script>
+<script src="./js/popup.js"></script>
 <script type="text/javascript">
+  
     $(".gallery_title_text").click(function(){
         var offsetSection1 = $(".gamma-gallery").offset();
         

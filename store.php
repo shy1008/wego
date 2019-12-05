@@ -39,6 +39,7 @@
 
 <!-- 바디시작 -->
 <body>
+<?php include "./lib/login_form.php"; ?>
   <!-- wrap시작 -->
     <div id="wrap">
         <header>
@@ -87,7 +88,7 @@
 
 <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
-
+<script src="./js/popup.js"></script>
 <script>
 
     $('.hidebar').click(function(){
@@ -142,6 +143,7 @@
 </script>
 <script src='https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js'></script>
 <script  src="./js/store.js"></script>
+
 
 <!-- 바디 끝 -->
 </body>
