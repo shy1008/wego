@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>download file</h2>
-    <a href="WegoGames/wego.zip">click</a>
+    <a href="WegoGames/wego.exe">click</a>
 </body>
 </html>
 
@@ -35,10 +35,8 @@ if(!empty($_GET['file']))
 }
 
 ?>
-<?php
-// 보안취약 
-if(strstr($filename,"../")||strstr($filename,"..\\"))
-{
-    echo "<script>alert('Access Denied!!')</script>";
-}
-?>
+<!-- // 보안취약 
+// if(strstr($filename,"../")||strstr($filename,"..\\"))
+// {
+//     echo "<script>alert('Access Denied!!')</script>";
+// } -->
