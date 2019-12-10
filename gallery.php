@@ -35,9 +35,9 @@
     <section class="gallery">
         <div class="gallery_title_wrap">
             <div class="gallery_title_img">
-                <div style="background:#f8d790";>1</div>
-                <div style="background:#6de687";>2</div>
-                <div style="background:#3facb8";>3</div>
+                <div class="gallery_title_img1"></div>
+                <div class="gallery_title_img2"></div>
+                <div class="gallery_title_img3"></div>
             </div>
             <div class="gallery_title_text">
                 <div>The Hearthstone player’s guide to Gods Unchained</br><span>13 NOV 2019</span></div>

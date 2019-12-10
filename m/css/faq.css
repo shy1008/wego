@@ -16,6 +16,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    background: #00000002 !important;
   }
   
   .container2 {
@@ -30,9 +31,6 @@
     padding: 1.3rem;
     margin: 30px auto;
     line-height: 2.5rem;
-  }
-  .sub_text{
-
   }
   .container2 p{
     font-size: 1rem !important;

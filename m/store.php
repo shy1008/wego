@@ -24,11 +24,12 @@
 <a href="#page-top" class="floating-btn scrollup">
   <img src="../img/icon/up32.png" alt="floating-btn" >	
 </a>
+<?php include "./lib/login_form.php"; ?>
 <!-- wrap시작 -->
   <div id="wrap">
   <!-- 헤더시작 --> 
     <header>
-      <?php include "./lib/header.php"; ?>
+      <?php  $page = 'store'; include "./lib/header.php"; ?>
   <!-- 헤더끝 --> 
     </header>
     <div class="store_img">
@@ -72,7 +73,7 @@
     </footer>
 <!-- wrap끝 -->
   </div>
-
+<script src="../js/popup.js"></script>
 <script type="text/javascript">
  $('.hidebar').click(function(){
         $('#pagination').hide();

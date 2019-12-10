@@ -25,11 +25,12 @@
 <a href="#page-top" class="floating-btn scrollup">
   <img src="../img/icon/up32.png" alt="floating-btn" >	
 </a>
+<?php include "./lib/login_form.php"; ?>
 <!-- wrap시작 -->
   <div id="wrap">
   <!-- 헤더시작 --> 
     <header>
-      <?php include "./lib/header.php"; ?>
+      <?php  $page = 'home'; include "./lib/header.php"; ?>
   <!-- 헤더끝 --> 
     </header>
 <!-- 단락 -->
@@ -134,6 +135,7 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="../slick/slick.min.js"></script>
 <script src="../js/event.js"></script>
+<script src="../js/popup.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="../js/aos.js"></script>
 

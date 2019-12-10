@@ -31,6 +31,7 @@ html,body {
     line-height: 1;
     overflow-x: hidden;
     font-family: 'Noto Sans', sans-serif;
+    background: #000;
     /* font-family: 'Noto Sans KR', sans-serif; */
 }
 ol, ul {
@@ -60,19 +61,24 @@ header{
     height: 100%;
     padding: .5rem 0px;
 }
+.nav li:first-child{
+    opacity: 1 !important;
+}
 .nav li{
     display: inline-block;
     padding: 0 2%;
-    opacity: .7;
+    opacity: .5;
+    margin-top: 10px;
 }
-
-.nav li p{
+.active{
+    opacity: 1 !important;
+}
+/* .nav li p{
     font-size: .7rem;
     color: white;
     margin-top: .2rem;
-    /* font-weight: bold; */
     color: #ffffff;
-}
+} */
 .menu_left{
     float: left;
     text-align: center;
@@ -158,6 +164,29 @@ header{
     border: none;
     cursor: pointer;
 }
+.dim-layer {
+    display: none;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.dim-layer .dimBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    filter: blur(20px);
+}
+.dim-layer .pop-layer {
+    display: block;
+  }
 .section1{
     background-image: url("../../img/m/main.jpg");
     background-position: center;
@@ -179,7 +208,7 @@ header{
 .section2{
     width: 100%;
     height: 400px;
-    background: rgb(221, 139, 81);
+    background: linear-gradient(#c6a052,#c6a052,#f1f1f1);
 }
 .slide_item{
     height: 250px;

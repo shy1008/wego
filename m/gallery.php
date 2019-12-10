@@ -28,11 +28,12 @@
 <a href="#page-top" class="floating-btn scrollup">
   <img src="../img/icon/up32.png" alt="floating-btn" >	
 </a>
+<?php include "./lib/login_form.php"; ?>
 <!-- wrap시작 -->
   <div id="wrap">
   <!-- 헤더시작 --> 
     <header>
-      <?php include "./lib/header.php"; ?>
+      <?php  $page = 'gallery'; include "./lib/header.php"; ?>
   <!-- 헤더끝 --> 
     </header>
 <!-- 단락 -->
@@ -154,6 +155,7 @@
 <script src="../js/aos.js"></script>
 <script src="../js/jquery.masonry.min.js"></script>
 <script src="../js/gamma.js"></script>
+<script src="../js/popup.js"></script>
 <script type="text/javascript">
 $(".gallery_title_text").click(function(){
         var offsetSection1 = $(".gamma-gallery").offset();

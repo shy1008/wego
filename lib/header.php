@@ -8,8 +8,7 @@
     </ul>
     
     <ul class="menu_right">
-        <!-- <li><?php $pass = $_POST['Password']; ?></li> -->
-        <li><a href="#layer2" class="btn-example"><img src="./img/login_button.png" alt="login" style="height:35px; cursor:pointer; opacity:.8;"> </a></li>
+        <!-- <li><a href="popup" class="btn-example"><img src="./img/login_button.png" alt="login" style="height:35px; cursor:pointer; opacity:.8;"> </a></li> -->
         <li><a href="WegoGames/wego.exe"><img src="./img/down4.png" alt="download" style="height:35px; cursor:pointer; opacity:.8;"></a> </li>
     </ul>
 </nav>
