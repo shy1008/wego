@@ -13,6 +13,7 @@ $(document).ready(function(){
     $('.gallery_title_img').slick({
       dots: true,
       infinite: true,
+      autoplaySpeed: 2000,
       speed: 300,
       slidesToShow: 1,
       adaptiveHeight: true,
@@ -31,7 +32,8 @@ $(document).ready(function(){
           pauseOnHover: false,
           pauseOnFocus: false,
           focusOnSelect: false,
-          autoplaySpeed: 1000,
+          autoplaySpeed: 2000,
+          speed: 300,
           responsive: [
       {
         breakpoint: 1300,

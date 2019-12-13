@@ -90,7 +90,7 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
 <script src="./js/popup.js"></script>
 <script>
-
+    
     $('.hidebar').click(function(){
         $('#pagination').hide();
     });
@@ -140,11 +140,11 @@
             }
         })
     })
+    $(function(){
+        $('#Container').mixItUp();
+    });
 </script>
 <script src='https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js'></script>
-<script  src="./js/store.js"></script>
-
-
 <!-- 바디 끝 -->
 </body>
 </html>

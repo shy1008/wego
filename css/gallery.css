@@ -41,6 +41,7 @@
     display: inline-block;
     text-align: left;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .gallery_title_text div{
     width: 100%;

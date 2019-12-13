@@ -240,7 +240,7 @@ header{
 }
 .header-content{
     z-index: 3;
-    display: grid;
+    display: block;
 }
 #myVideo {
     min-width: 100%;
