@@ -1,7 +1,7 @@
 
 ## ** Wego_game **  ##
 
-[영상](wego/file/game1.mp4)
+[영상](/file/game1.mp4)
 
 **주요 기능**
 ----------
